@@ -287,6 +287,12 @@ namespace SCAMPUtil.JSON
 		{
 		}
 
+		public override bool TryString (out string s)
+		{
+			s = "";
+			return true;
+		}
+
 		public override bool IsNull { get { return true; } }
 
 		internal override void StringifyRecurse (StringBuilder sb)
